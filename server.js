@@ -18,7 +18,7 @@ const server = require('http').createServer(app);
 const PORT = process.env.PORT;
 const io = require('socket.io')(server, {
   cors: {
-    origin: 'http://localhost:3000',
+    origin: 'https://mern-pankchat-client.onrender.com',
     methods: ['GET', 'POST']
   }
 })
